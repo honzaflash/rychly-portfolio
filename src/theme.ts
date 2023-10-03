@@ -1,6 +1,6 @@
-import { ThemeOptions } from '@mui/material/styles'
+import { createTheme } from '@mui/material/styles'
 
-export const themeOptions: ThemeOptions = {
+const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
@@ -24,47 +24,52 @@ export const themeOptions: ThemeOptions = {
   },
   typography: {
     h1: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     h2: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     h3: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     h4: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     body1: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     body2: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     button: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     caption: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     overline: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     subtitle2: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     subtitle1: {
-      fontFamily: 'Open Sans',
+      fontFamily: 'Roboto',
     },
     h6: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
     h5: {
-      fontFamily: 'Victor Mono',
+      fontFamily: 'Roboto Mono',
     },
-    fontFamily: 'Open Sans',
+    fontFamily: 'Roboto',
   },
   components: {
+    MuiContainer: {
+      defaultProps: {
+        maxWidth: 'xl'
+      }
+    },
     MuiButtonBase: {
       defaultProps: {
         disableRipple: true,
@@ -85,4 +90,6 @@ export const themeOptions: ThemeOptions = {
     borderRadius: 2,
   },
   spacing: 4,
-}
+})
+
+export default  theme
