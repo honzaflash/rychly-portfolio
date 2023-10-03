@@ -25,6 +25,9 @@ Runs `eslint` on the project.
 ### `yarn lint:fix`
 Runs `eslint --fix` on the project.
 
+### `yarn gen` or `yarn generate:configs`
+Runs a script that converts all yaml files in `src/configs/` to json files (creating new files).
+
 ### `yarn test`
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.

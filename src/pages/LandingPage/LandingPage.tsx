@@ -1,4 +1,5 @@
 import { Box, Grid, Stack, Typography } from '@mui/material'
+import { Skills } from './Skills'
 
 export const LandingPage = () => (
   <Grid container>
@@ -15,7 +16,7 @@ export const LandingPage = () => (
       </Box>
     </Grid>
     <Grid xs={12}>
-      <Typography>List of useful skills that I have</Typography>
+      <Skills />
     </Grid>
   </Grid>
 )

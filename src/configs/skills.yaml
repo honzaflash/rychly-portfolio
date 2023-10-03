@@ -1,0 +1,23 @@
+hard:
+  advanced:
+    JavaScript: [fe, be]
+    TypeScript: [fe, be]
+    Haskell: [fe, be]
+    React: [fe]
+  intermediate:
+    C++: [be, full-stack]
+    Python: [be, full-stack]
+    SQL: [be, full-stack]
+    Graphic Design: [fe, web]
+  familiar:
+    Kotlin: [be, full-stack]
+    Java: [be, full-stack]
+    Rust: [be, full-stack]
+    Go: [be, full-stack]
+    Kafka: [be]
+    Mircoservices: [be]
+    Spring Boot: [be]
+
+soft:
+  - Teamwork
+  - Problem Solving
