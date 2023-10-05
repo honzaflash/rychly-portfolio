@@ -1,9 +1,11 @@
 import { Box, CssBaseline, ThemeProvider } from '@mui/material'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { Navigate, RouterProvider, createHashRouter } from 'react-router-dom'
 
 import theme from './theme'
 import { LandingPage } from './pages/LandingPage'
 import { Layout } from './layouts/Layout'
+import { Things } from './layouts/Things'
+
 
 const router = createHashRouter([
   {
@@ -11,22 +13,20 @@ const router = createHashRouter([
     element: <Layout />,
     children: [
       {
-        path: '/full-stack',
+        path: '/landing',
+        element: <Navigate to="/landing/all" />
+      },
+      {
+        path: '/landing/:filter',
         element: <LandingPage />,
       },
       {
-        path: '/front-end',
-        element: <LandingPage />,
+        path: '/things',
+        element: <Things />,
       },
-      {
-        path: '/back-end',
-        element: <LandingPage />,
-      },
-    ]
+    ],
   },
 ])
-
-
 
 export const App = () => {
   return (

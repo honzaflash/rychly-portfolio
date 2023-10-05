@@ -9,11 +9,10 @@ const a11yProps = (index: number) => ({
  
 })
 
-const tabs = [
-  { label: 'Full Stack', path: 'full-stack' },
-  { label: 'Front End', path: 'front-end' },
-  { label: 'Back End', path: 'back-end' },
-] as const
+const tabs: { label: string, path: string }[] = [
+  { label: 'Main', path: '/landing' },
+  { label: 'Things', path: 'things' },
+]
 
 export const Navigation = () => {
   const { pathname } = useLocation()
@@ -21,9 +20,20 @@ export const Navigation = () => {
   return(
     <AppBar>
       <Container>
-        <Toolbar>
-          <Typography variant='h4' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>/* @author: Jan Rychly */</Typography>
-          <Typography variant='h6'sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>J. R.</Typography>
+        <Toolbar sx={{ pl: { xs: 8} }}>
+          <Typography
+            component="div"
+            variant='h1'
+            sx={{
+              position: 'fixed',
+              left: 0,
+              fontSize: '14px',
+              fontWeight: 700,
+              transform: 'rotate(-90deg)',
+            }}
+          >
+            Rychly
+          </Typography>
           <Box>
             <Tabs value={tabs.findIndex((tab) => pathname.includes(tab.path))} >
               {tabs.map((tab, index) => (<Tab label={tab.label} onClick={() => navigate(tab.path)} key={index} {...a11yProps(index)}/>))}

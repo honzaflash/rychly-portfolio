@@ -1,5 +1,6 @@
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { Skills } from './Skills'
+import { FilterSwitcher } from './FilterSwitcher'
 
 export const LandingPage = () => (
   <Grid container>
@@ -8,6 +9,7 @@ export const LandingPage = () => (
         <Typography variant='h1' color='primary' sx={{fontWeight: 700, fontSize: '900%'}}>Jan<br/>Rychly</Typography>
         <Typography variant='h3'>Software Engineer</Typography>
         <Typography variant='body1'>I am amazing and you should hire me.</Typography>
+        <FilterSwitcher />
       </Stack>
     </Grid>
     <Grid item xs={12} md={6}>
