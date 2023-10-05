@@ -15,7 +15,7 @@ const theme = createTheme({
     },
     text: {
       primary: '#ffffff',
-      secondary: '#fafffb',
+      secondary: '#CAFFCE',
       disabled: 'rgba(242,245,242,0.38)',
     },
     warning: {
@@ -85,6 +85,22 @@ const theme = createTheme({
         arrow: true,
       },
     },
+    MuiCssBaseline: {
+      styleOverrides: {
+        a: {
+          transition: 'color 200ms',
+          '&:any-link': {
+            color: '#FFF'
+          },
+          '&:link:hover': {
+            color: '#48b53f'
+          },
+          '&:visited:hover': {
+            color: '#CAFFCE'
+          }
+        }
+      }
+    }
   },
   shape: {
     borderRadius: 2,
