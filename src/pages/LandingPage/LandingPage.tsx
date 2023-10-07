@@ -1,8 +1,9 @@
-import { Box, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 import { Skills } from './Skills'
 import { Intro } from './Intro'
 import { FilterSwitcher } from './FilterSwitcher'
 import { ExperienceList } from './ExperienceList'
+import { Todo } from '../../components/Todo'
 
 export const LandingPage = () => (
   <Grid container spacing={2} >
@@ -14,7 +15,7 @@ export const LandingPage = () => (
           color='primary'
           sx={{
             fontWeight: 700,
-            fontSize: '900%',
+            fontSize: {xs: '600%', sm: '900%'},
             lineHeight: 1,
           }}
         >
@@ -27,15 +28,19 @@ export const LandingPage = () => (
       </Stack>
     </Grid>
     <Grid item xs={12} md={6}>
-      <Box sx={{height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(50,50,50,0.2)'}}>
-        <Typography component="pre">H i g h l i g h t s   G a l l e r y   H e r e</Typography>
-      </Box>
+      <Todo name="H i g h l i g h t s &nbsp; G a l l e r y" />
     </Grid>
     <Grid item xs={12}>
       <Skills />
     </Grid>
     <Grid item xs={12} md={6}>
       <ExperienceList />
+    </Grid>
+    <Grid item xs={12} md={6}>
+      <Todo name="Education" />
+    </Grid>
+    <Grid item xs={12} md={12}>
+      <Todo name="Projects" />
     </Grid>
   </Grid>
 )
