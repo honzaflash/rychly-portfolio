@@ -1,0 +1,36 @@
+{
+  "Vacuumlabs": {
+    "title": "Software Engineer",
+    "from": "Jan 2021",
+    "to": "Dec 2022",
+    "points": [
+      "helped",
+      {
+        "was useful": [
+          "fe"
+        ]
+      },
+      {
+        "did *things*": [
+          "fe",
+          "be"
+        ]
+      },
+      {
+        "wrote stuff": [
+          "be"
+        ]
+      }
+    ]
+  },
+  "Masaryk University": {
+    "title": "Web Developer and Designer",
+    "from": "Feb 2020",
+    "to": "Dec 2022",
+    "points": [
+      "learned about Twine 2 and its markdown languages",
+      "hacked games",
+      "cooperated with university teachers"
+    ]
+  }
+}

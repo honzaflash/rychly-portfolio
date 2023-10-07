@@ -1,17 +1,21 @@
 import { createTheme } from '@mui/material/styles'
 
+const PRIMARY_COLOR = '#48b53f'
+
+const DEFAULT_BACKGROUND = '#010302'
+
 const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#48b53f',
+      main: PRIMARY_COLOR,
       contrastText: 'rgba(0,0,0,0.87)',
     },
     secondary: {
       main: '#9843c7',
     },
     background: {
-      default: '#010302',
+      default: DEFAULT_BACKGROUND,
     },
     text: {
       primary: '#ffffff',
@@ -80,6 +84,17 @@ const theme = createTheme({
         color: 'primary',
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          background: DEFAULT_BACKGROUND,
+          border: 'solid 2px',
+          borderColor: PRIMARY_COLOR,
+          borderRadius: '8px',
+          padding: '12px 18px',
+        },
+      },
+    },
     MuiTooltip: {
       defaultProps: {
         arrow: true,
@@ -93,7 +108,7 @@ const theme = createTheme({
             color: '#FFF'
           },
           '&:link:hover': {
-            color: '#48b53f'
+            color: PRIMARY_COLOR,
           },
           '&:visited:hover': {
             color: '#CAFFCE'

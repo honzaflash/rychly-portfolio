@@ -2448,6 +2448,11 @@
     "@types/mime" "*"
     "@types/node" "*"
 
+"@types/showdown@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/showdown/-/showdown-2.0.2.tgz#389e6d54a29d5d50ffb52923df9670e15a9a81d4"
+  integrity sha512-0UnGnwRsiTojb5VGCkgbk3mKJpyAR2EPhalhHGY4/NCFwDyacqVmPWP7uV0mbXC4eh6n7lO3HPCpb2NP+B5NPQ==
+
 "@types/sockjs@^0.3.33":
   version "0.3.33"
   resolved "https://registry.yarnpkg.com/@types/sockjs/-/sockjs-0.3.33.tgz#570d3a0b99ac995360e3136fd6045113b1bd236f"

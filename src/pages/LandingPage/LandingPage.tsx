@@ -2,6 +2,7 @@ import { Box, Grid, Stack, Typography } from '@mui/material'
 import { Skills } from './Skills'
 import { Intro } from './Intro'
 import { FilterSwitcher } from './FilterSwitcher'
+import { ExperienceList } from './ExperienceList'
 
 export const LandingPage = () => (
   <Grid container spacing={2} >
@@ -32,6 +33,9 @@ export const LandingPage = () => (
     </Grid>
     <Grid item xs={12}>
       <Skills />
+    </Grid>
+    <Grid item xs={12} md={6}>
+      <ExperienceList />
     </Grid>
   </Grid>
 )

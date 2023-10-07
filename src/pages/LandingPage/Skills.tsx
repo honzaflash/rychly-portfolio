@@ -3,15 +3,8 @@ import { useParams } from 'react-router-dom'
 import _ from 'lodash'
 
 import rawSkills from '../../configs/skills.json'
+import { Relevancy, relevancyPredicates } from './relevancyFiltering'
 
-
-type Relevancy = ('fe' | 'be')[]
-
-const filterFuns: Record<string, ((r: Relevancy) => boolean) | undefined> = {
-  'full-stack': (r) => r.includes('fe') || r.includes('be'),
-  'front-end': (r) => r.includes('fe'),
-  'back-end': (r) => r.includes('be'),
-} as const
 
 const SkillChipsBox = ({ skills, ...props }: ChipProps & { skills: { name: string }[] }) => (
   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
@@ -25,7 +18,7 @@ export const Skills = () => {
   const { filter } = useParams()
   const skills = _.mapValues(rawSkills.hard, (ratedSkills, level) =>
     _.map(
-      _.pickBy(ratedSkills, filterFuns[filter ?? '']),
+      _.pickBy(ratedSkills, relevancyPredicates[filter ?? '']),
       (relevancy: Relevancy, name) => ({name, level, relevancy})),
   )
 
