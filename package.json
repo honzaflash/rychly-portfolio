@@ -1,5 +1,6 @@
 {
   "name": "rychly-portfolio",
+  "homepage": "https://honzaflash.github.io/rychly-portfolio",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "yarn generate:configs && react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "gen": "yarn generate:configs",
@@ -56,6 +59,7 @@
     "@typescript-eslint/parser": "^5.60.1",
     "eslint": "^8.43.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.0.0",
     "typescript": "^4.9.5"
   },
   "description": "Portfolio website",

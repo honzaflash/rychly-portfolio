@@ -19,6 +19,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Hosted at [http://localhost:3000](http://localhost:3000).
 
+### `yarn deploy`
+Builds and pushes the app to a deployment branch via `gh-pages`.
+
 ### `yarn lint`
 Runs `eslint` on the project.
 
