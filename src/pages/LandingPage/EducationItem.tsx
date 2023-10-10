@@ -1,5 +1,5 @@
-import { Card, List, ListItemText, Typography } from '@mui/material'
-import { SpanFromMd } from '../../components/SpanFromMd'
+import { Card, Typography } from '@mui/material'
+import { ListFromMd } from '../../components/ListFromMd'
 
 
 export type EducationDetails = {
@@ -12,20 +12,16 @@ export type EducationDetails = {
   courses?: string[]
 }
 
-type EducationProps = {
+type EducationItemProps = {
   details: EducationDetails
 }
 
-export const Education = ({ details }: EducationProps) => (
+export const EducationItem = ({ details }: EducationItemProps) => (
   <Card>
     <Typography variant="h4">{details.name}</Typography>
     <Typography variant="h6">{details.subtitle}</Typography>
     <Typography variant="overline">{details.from ? `${details.from}—` : ''}{details.to}</Typography>
-    <List>
-      {details.description.map((bullet, i) => (
-        <ListItemText key={i}><SpanFromMd markdown={bullet} /></ListItemText>
-      ))}
-    </List>
+    <ListFromMd items={details.description} />
     {/*  TODO make togglable */}
     {details.courses && <Typography>Some of the courses: {details.courses.join(', ')}</Typography>}
   </Card>

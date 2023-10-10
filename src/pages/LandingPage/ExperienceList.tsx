@@ -1,39 +1,28 @@
-import { Experience, WorkExperience } from '../../components/Experience'
+import { ExperienceItem } from './ExperienceItem'
 
 import work from '../../configs/work.json'
 import _ from 'lodash'
-import { Converter } from 'showdown'
 import { useParams } from 'react-router-dom'
-import { RelevancyTags, relevancyPredicates } from './relevancyFiltering'
+import { MaybeTaggedString, filterAndExtractRelevantStrings } from './relevancyFiltering'
 import { Section } from '../../components/Section'
+import { useMemo } from 'react'
 
 
-type PointRecord = string | { [key: string]: RelevancyTags }
-
-const filterPoints = (filter: string, points: PointRecord[]) =>
-  points.filter((point) => typeof point === 'string' || (relevancyPredicates[filter] ?? _.identity)(Object.values(point)[0]))
-
-const extractPointStrings = (points: PointRecord[]) =>
-  points.map((point) => typeof point === 'string' ? point : Object.keys(point)[0])
-
-const converter = new Converter()
-converter.setOption('openLinksInNewWindow', true)
-/** convert markdown to html and strip the `<p>` tag that showdown wraps the string with */
-const mdToHtmlString = (str: string) => converter.makeHtml(str).replace(/<p>|<\/p>/g, '')
+const getExperiences = (filter: string) => _.map(work, ({description, ...rest}, key) => ({
+  companyName: key,
+  description: filterAndExtractRelevantStrings(description as MaybeTaggedString[], filter ?? ''),
+  ...rest,
+}))
 
 export const ExperienceList = () => {
   const { filter } = useParams()
 
-  const experiences: WorkExperience[] = _.map(work, ({points, ...rest}, key) => ({
-    companyName: key,
-    htmlPoints: extractPointStrings(filterPoints(filter ?? '', points as PointRecord[])).map(mdToHtmlString),
-    ...rest,
-  }))
+  const experiences = useMemo(() => getExperiences(filter ?? ''), [filter])
 
   return (
     <Section title="Work Experience">
       {experiences.map((experience, i) => (
-        <Experience experience={experience} key={i} />
+        <ExperienceItem experience={experience} key={i} />
       ))}
     </Section>
   )

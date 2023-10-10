@@ -4,7 +4,7 @@ import rawEducation from '../../configs/education.json'
 import { useMemo } from 'react'
 import _ from 'lodash'
 import { Section } from '../../components/Section'
-import { Education } from './EducationItem'
+import { EducationItem } from './EducationItem'
 
 
 type RawEducationDetails = {
@@ -39,7 +39,7 @@ export const EducationList = () => {
 
   return (
     <Section title="Education">
-      {education.map((itemData, i) => <Education details={itemData} key={i} />)}
+      {education.map((itemData, i) => <EducationItem details={itemData} key={i} />)}
     </Section>
   )
 }

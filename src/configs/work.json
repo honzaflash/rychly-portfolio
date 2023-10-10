@@ -3,7 +3,7 @@
     "title": "Software Engineer",
     "from": "Jan 2021",
     "to": "Dec 2022",
-    "points": [
+    "description": [
       "helped",
       {
         "was useful": [
@@ -27,7 +27,7 @@
     "title": "Web Developer and Designer",
     "from": "Feb 2020",
     "to": "Dec 2022",
-    "points": [
+    "description": [
       "learned about Twine 2 and its markdown languages",
       "hacked games",
       "cooperated with university teachers"
