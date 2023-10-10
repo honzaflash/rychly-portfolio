@@ -1,0 +1,20 @@
+Masaryk University:
+  from: Sep 2018
+  to: Jun 2021
+  subtitle: Bachelor's degree in Computer Sciences
+  website: https://www.fi.muni.cz/
+  description:
+    - Learned how to speak with computers
+    - Did some cool stuff with p5.js:
+        [fe]
+  courses:
+    - Software Engineering I
+    - Java:
+        [be]
+
+Hyperskill:
+  to: May 2022
+  subtitle: Kotlin Core
+  description:
+    - Learned the basics of Kotlin and completed a card game project for practice.
+  relevancy: [be]

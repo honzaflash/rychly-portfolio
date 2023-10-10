@@ -4,11 +4,11 @@ import work from '../../configs/work.json'
 import _ from 'lodash'
 import { Converter } from 'showdown'
 import { useParams } from 'react-router-dom'
-import { Relevancy, relevancyPredicates } from './relevancyFiltering'
+import { RelevancyTags, relevancyPredicates } from './relevancyFiltering'
 import { Section } from '../../components/Section'
 
 
-type PointRecord = string | { [key: string]: Relevancy }
+type PointRecord = string | { [key: string]: RelevancyTags }
 
 const filterPoints = (filter: string, points: PointRecord[]) =>
   points.filter((point) => typeof point === 'string' || (relevancyPredicates[filter] ?? _.identity)(Object.values(point)[0]))

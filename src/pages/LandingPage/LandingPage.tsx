@@ -37,7 +37,7 @@ export const LandingPage = () => (
       <ExperienceList />
     </Grid>
     <Grid item xs={12} md={6}>
-      <Todo name="Education" />
+      <EducationList />
     </Grid>
     <Grid item xs={12} md={12}>
       <Todo name="Projects" />
