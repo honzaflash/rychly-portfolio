@@ -1,15 +1,16 @@
-import { Grid, Stack, Typography } from '@mui/material'
+import { Container, Grid, Stack, Typography } from '@mui/material'
 import { Skills } from './Skills'
 import { Intro } from './Intro'
-import { FilterSwitcher } from './FilterSwitcher'
+import { FilterSelector } from './FilterSelector'
 import { ExperienceList } from './ExperienceList'
+import { EducationList } from './EducationList'
 import { Todo } from '../../components/Todo'
 
 export const LandingPage = () => (
   <Grid container spacing={2} >
     <Grid item xs={12} md={6}>
       <Stack>
-        <Typography variant="h5" sx={{ }}>Hey, my name is</Typography>
+        <Typography variant="h5" component="span">Hi, my name is</Typography>
         <Typography
           variant='h1'
           color='primary'
@@ -24,11 +25,15 @@ export const LandingPage = () => (
         </Typography>
         <Typography variant='h3' sx={{ mt: 6 }}>Software Engineer</Typography>
         <Intro />
-        <FilterSwitcher />
       </Stack>
     </Grid>
     <Grid item xs={12} md={6}>
-      <Todo name="H i g h l i g h t s &nbsp; G a l l e r y" />
+      <Container>
+        <Todo sx={{ opacity: 0 }} name="Cool art" />
+      </Container>
+    </Grid>
+    <Grid item xs="auto">
+      <FilterSelector />
     </Grid>
     <Grid item xs={12}>
       <Skills />

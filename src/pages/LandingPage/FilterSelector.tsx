@@ -17,7 +17,7 @@ const filterOpts = [
   { label: 'Back End', filter: 'back-end' },
 ] as const
 
-export const FilterSwitcher = () => {
+export const FilterSelector = () => {
   const { filter } = useParams()
   const navigate = useNavigate()
 
