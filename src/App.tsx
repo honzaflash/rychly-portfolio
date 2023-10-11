@@ -4,7 +4,7 @@ import { Navigate, RouterProvider, createHashRouter } from 'react-router-dom'
 import theme from './theme'
 import { LandingPage } from './pages/LandingPage'
 import { Layout } from './layouts/Layout'
-import { Things } from './layouts/Things'
+import { Things } from './pages/Things/Things'
 
 
 const router = createHashRouter([
