@@ -1,5 +1,6 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Card, Typography, accordionSummaryClasses } from '@mui/material'
 import { ListFromMd } from '../../components/ListFromMd'
+import { ExternalLink } from '../../components/ExternalLink'
 
 
 export type EducationDetails = {
@@ -18,7 +19,7 @@ type EducationItemProps = {
 
 export const EducationItem = ({ details }: EducationItemProps) => (
   <Card>
-    <Typography variant="h4">{details.name}</Typography>
+    <Typography variant="h4">{details.website ? <ExternalLink href={details.website}>{details.name}</ExternalLink> : details.name}</Typography>
     <Typography variant="h6">{details.subtitle}</Typography>
     <Typography variant="overline">{details.from ? `${details.from}–` : ''}{details.to}</Typography>
     <ListFromMd items={details.description} />
