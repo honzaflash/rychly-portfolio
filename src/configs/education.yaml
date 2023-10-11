@@ -4,17 +4,27 @@ Masaryk University:
   subtitle: Bachelor's degree in Computer Sciences
   website: https://www.fi.muni.cz/
   description:
-    - Learned how to speak with computers
-    - Did some cool stuff with p5.js:
-        [fe]
+    - The final thesis [Game Development in Haskell](https://github.com/honzaflash/ba-thesis) shows my curiosity, willingness to challenge myself, and my ability to understand and analyze high level concepts early on. In a single semester, researched available frameworks, learned different approaches to game engine design, implemented two versions of a game, and wrote an extensive analysis and a summary of my experience. The thesis received an A
+
   courses:
     - Software Engineering I
-    - Java:
-        [be]
+    - Algorithms and Data Structures I
+    - Computability and Complexity
+    - Automata and Grammars
+    - Database Systems: [be]
+    - Computer Network Services
+    - Seminar on Functional Programming
+    - Java: [be]
+    - C++ programming: [be]
+    - Principles of Low-Level Programming: [be]
+    - Generative Design Programming: [fe]
+    - Game Design I: [game]
 
-Hyperskill:
+Hyperskill.org/JetBrains Academy:
   to: May 2022
-  subtitle: Kotlin Core
+  subtitle: Kotlin Core Course
   description:
-    - Learned the basics of Kotlin and completed a card game project for practice.
+    - Gained solid understanding of Kotlin through quizzes, a practice project, and reading through the language documentation 
+    - Refreshed knowledge of Object Oriented principles
+    - Followed up by learning the basics of microservice architecture and Spring Boot 
   relevancy: [be]

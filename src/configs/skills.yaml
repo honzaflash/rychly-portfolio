@@ -1,23 +1,33 @@
 hard:
   advanced:
     JavaScript: [fe, be]
-    TypeScript: [fe, be]
-    Haskell: [fe, be]
+    TypeScript: [fe, be, chain]
+    Haskell: [fe, be, chain]
     React: [fe]
   intermediate:
-    C++: [be, full-stack]
-    Python: [be, full-stack]
-    SQL: [be, full-stack]
+    C++: [be]
+    Python: [be]
     Graphic Design: [fe, web]
+    Node.js: [be]
+    HTML: [fe]
+    CSS: [fe]
+    Redux Toolkit: [fe]
+    Material UI: [fe]
+    Express.js: [be]
+    REST APIs: [fe, be]
+    PostgreSQL: [be]
+    Git: [all]
+    Jira/Atlassian: [all]
   familiar:
-    Kotlin: [be, full-stack]
-    Java: [be, full-stack]
-    Rust: [be, full-stack]
-    Go: [be, full-stack]
+    Jest.js: [fe]
+    jQuery: [fe]
+    Kotlin: [be, chain]
+    Java: [be]
+    Rust: [be, chain]
+    Go: [be, chain]
     Kafka: [be]
+    CI/CD: [fe, be]
     Mircoservices: [be]
     Spring Boot: [be]
 
-soft:
-  - Teamwork
-  - Problem Solving
+soft: [Love of learning, Problem solving, Attention to detail, Teamwork, Code ownership, Agile]

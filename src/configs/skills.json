@@ -7,11 +7,13 @@
       ],
       "TypeScript": [
         "fe",
-        "be"
+        "be",
+        "chain"
       ],
       "Haskell": [
         "fe",
-        "be"
+        "be",
+        "chain"
       ],
       "React": [
         "fe"
@@ -19,40 +21,74 @@
     },
     "intermediate": {
       "C++": [
-        "be",
-        "full-stack"
+        "be"
       ],
       "Python": [
-        "be",
-        "full-stack"
-      ],
-      "SQL": [
-        "be",
-        "full-stack"
+        "be"
       ],
       "Graphic Design": [
         "fe",
         "web"
+      ],
+      "Node.js": [
+        "be"
+      ],
+      "HTML": [
+        "fe"
+      ],
+      "CSS": [
+        "fe"
+      ],
+      "Redux Toolkit": [
+        "fe"
+      ],
+      "Material UI": [
+        "fe"
+      ],
+      "Express.js": [
+        "be"
+      ],
+      "REST APIs": [
+        "fe",
+        "be"
+      ],
+      "PostgreSQL": [
+        "be"
+      ],
+      "Git": [
+        "all"
+      ],
+      "Jira/Atlassian": [
+        "all"
       ]
     },
     "familiar": {
+      "Jest.js": [
+        "fe"
+      ],
+      "jQuery": [
+        "fe"
+      ],
       "Kotlin": [
         "be",
-        "full-stack"
+        "chain"
       ],
       "Java": [
-        "be",
-        "full-stack"
+        "be"
       ],
       "Rust": [
         "be",
-        "full-stack"
+        "chain"
       ],
       "Go": [
         "be",
-        "full-stack"
+        "chain"
       ],
       "Kafka": [
+        "be"
+      ],
+      "CI/CD": [
+        "fe",
         "be"
       ],
       "Mircoservices": [
@@ -64,7 +100,11 @@
     }
   },
   "soft": [
+    "Love of learning",
+    "Problem solving",
+    "Attention to detail",
     "Teamwork",
-    "Problem Solving"
+    "Code ownership",
+    "Agile"
   ]
 }

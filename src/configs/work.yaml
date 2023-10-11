@@ -3,19 +3,21 @@ Vacuumlabs:
   from: Jan 2021
   to: Dec 2022
   description:
-    - helped
-    - was useful:
-      - fe
-    - did *things*:
-      - fe
-      - be
-    - wrote stuff:
-      - be
+    - "Worked on two projects: covid-testing laboratory system (full stack) and a neo bank (front end)"
+    - Was promoted to a higher level both times my performance was evaluated because of my receptivity to criticism
+    - Suggested automating TypeScript type generation for our APIs and created the script for it. That made our app more type-safe, saved us time and made it easy to keep updating the types as the backend changed
+    - Pushed for clear, expressive, and type-safe code through suggestions in reviews and sharing my knowledge of the TS type system in discussions improving our code quality
+    - Built main account, saving accounts, and loan views with one common React component minimizing duplicate code while using type templates, and narrowing to keep everything clear and type-safe: [fe]
+    - Understood design requirements and resolved few misunderstandings before a wrong feature was implemented
+    - Was trusted to write extra documentation to ensure smooth project handover
+    - Helped to refactor database relationships and wrote SQL database migrations when expanding the lab system to ensure better scalability and preserving all current production data. This allowed us to pivot to other kinds of testing in addition to covid-tests: [be]
+
 Masaryk University:
   title: Web Developer and Designer
   from: Feb 2020
   to: Dec 2022
   description:
-    - learned about Twine 2 and its markdown languages
-    - hacked games
-    - cooperated with university teachers 
+    - Collaborated remotely with university teachers to create non-linear interactive stories for educational purposes
+    - Exceeded expectations by providing beautiful visuals suiting each story’s theme and extra functionality
+    - Used creative problem solving, web design (JS, HTML, CSS), and graphic design skills to fulfill requirements and creative vision despite technical limitations of the tool used for creating the games: [fe]
+    - Created a custom tool that made developer experience much better
