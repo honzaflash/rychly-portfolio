@@ -20,7 +20,7 @@ export const EducationItem = ({ details }: EducationItemProps) => (
   <Card>
     <Typography variant="h4">{details.name}</Typography>
     <Typography variant="h6">{details.subtitle}</Typography>
-    <Typography variant="overline">{details.from ? `${details.from}—` : ''}{details.to}</Typography>
+    <Typography variant="overline">{details.from ? `${details.from}–` : ''}{details.to}</Typography>
     <ListFromMd items={details.description} />
     {details.courses && (
       <Accordion
@@ -32,16 +32,18 @@ export const EducationItem = ({ details }: EducationItemProps) => (
           sx={{
             p: 0,
             m: 0,
-            minHeight: '0px',
+            minHeight: '30px',
             justifyContent: 'flex-start',
             gap: 3,
-            '& > *': {
-              flexGrow: 0
-            },
             [`&.${accordionSummaryClasses.expanded}`]: {
               minHeight: '0px',
+              m: 0,
             },
             [`& > .${accordionSummaryClasses.content}`]: {
+              my: 0,
+              flexGrow: 0,
+            },
+            [`& > .${accordionSummaryClasses.content}.${accordionSummaryClasses.expanded}`]: {
               my: 0,
             }
           }}
@@ -49,7 +51,7 @@ export const EducationItem = ({ details }: EducationItemProps) => (
           <Typography>Some of the courses I took</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ p: 1, pl: 3 }}>
-          <Typography>{details.courses.join(', ')}</Typography>
+          <Typography>{details.courses.join(' • ')}</Typography>
         </AccordionDetails>
       </Accordion>
     )}

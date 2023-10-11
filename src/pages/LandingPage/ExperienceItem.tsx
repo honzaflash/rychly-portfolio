@@ -17,8 +17,8 @@ type ExperienceItemProps = {
 
 export const ExperienceItem = ({ experience }: ExperienceItemProps) => (
   <Card>
-    <Typography variant="h5">{experience.title} &bull; {experience.companyName}</Typography>
-    <Typography variant="overline">{experience.from}&mdash;{experience.to}</Typography>
+    <Typography variant="h5" color="primary">{experience.title} &mdash; {experience.companyName}</Typography>
+    <Typography variant="overline">{experience.from}&ndash;{experience.to}</Typography>
     <ListFromMd items={experience.description} />
   </Card>
 )
