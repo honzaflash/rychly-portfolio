@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles'
 const PRIMARY_COLOR = '#48b53f'
 
 const DEFAULT_BACKGROUND = '#010302'
+const PAPER_BACKGROUND = '#091209'
 
 const theme = createTheme({
   palette: {
@@ -16,6 +17,7 @@ const theme = createTheme({
     },
     background: {
       default: DEFAULT_BACKGROUND,
+      paper: PAPER_BACKGROUND,
     },
     text: {
       primary: '#ffffff',
