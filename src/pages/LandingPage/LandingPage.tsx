@@ -5,6 +5,7 @@ import { FilterSelector } from './FilterSelector'
 import { ExperienceList } from './ExperienceList'
 import { EducationList } from './EducationList'
 import { Todo } from '../../components/Todo'
+import { ProjectList } from './ProjectList'
 
 export const LandingPage = () => (
   <Grid container spacing={2} >
@@ -45,7 +46,7 @@ export const LandingPage = () => (
       <EducationList />
     </Grid>
     <Grid item xs={12} md={12}>
-      <Todo name="Projects" />
+      <ProjectList />
     </Grid>
   </Grid>
 )

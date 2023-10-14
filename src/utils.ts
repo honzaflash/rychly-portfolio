@@ -5,9 +5,14 @@ import { Converter } from 'showdown'
 
 type ObjectOfObjects = { [k: string]: object }
 
-/** Sort of the reverse to `keyBy` from lodash */
-export const unKeyBy = <T extends ObjectOfObjects>(obj: T, keyProp: string) =>
-  _.map(obj, (val, key) => ({...val, [keyProp]: key }))
+/** Sort of the reverse of `keyBy` from lodash */
+export const unKeyBy = <T extends ObjectOfObjects, KeyProp extends string>(
+  obj: T,
+  keyProp: KeyProp,
+) => _.map(obj, (val, key) => (
+      {...val, [keyProp]: key }
+    ) as T[keyof T] & { [K in KeyProp]: keyof T }
+  )
 
 /** Mainly useful when we know `o` has a single key */
 export const getFirstKey = <T, Obj extends Record<string | number | symbol, T>>(o: Obj) => Object.keys(o)[0]

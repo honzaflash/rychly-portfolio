@@ -1,0 +1,64 @@
+Pie-Hub:
+  relevancy: [fe, be]
+  date:
+    start: 2021
+  tech:
+    - Raspberry Pi 4
+    - General Purpose I/O
+    - I2C
+    - Python
+    - Bash
+    - UNIX services
+    - Node.js
+    - TypeScript
+  summary: "React app with back end running on a Raspberry Pi. Shows useful information in one place including: room temperature and humidity, task list from Notion, and time."
+  description:
+    - React app hosted on a single-board computer (RPi) along with a RESTful API written with Express.js
+    - Wrote a proxy service for Notion (the app then displays a task list) 
+    - Connected an indoor temperature and humidity sensor 
+    - Wired up a relay board to control appliances through software
+
+
+Rychly Portfolio:
+  tech:
+    - React
+  date:
+    start: 2023
+    ongoing: true
+  summary: Responsive React app that shows off who I am as a professional and a bit more.
+  description:
+    - The 'Fast' Portfolio ([What does Rychly mean?](https://translate.google.com/details?sl=cs&tl=en&text=rychl%C3%BD&op=translate))
+    - Responsive design, uses Material UI and React Router 
+    - Content can be easily updated through YAML configuration files 
+    - Main page filters content based on the selected type of developer
+
+Game Development in Haskell:
+  relevancy: [fe, be]
+  date:
+    finish: May 2021
+  tech:
+    - Haskell
+    - apecs (Entity Component System)
+  summary: Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.
+  description:
+    - Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.
+
+pure-asteroids:
+  date:
+    finish: Apr 2021
+  tech:
+    - Haskell
+    - SDL2
+  summary: An atempt at a purely functional game engine focusing on type safety and clarity.
+  description:
+    - An atempt at a purely functional game engine focusing on type safety and clarity.
+
+hAsteroids:
+  date:
+    finish: Apr 2021
+  tech:
+    - Haskell
+    - SDL2
+  summary: Game in Haskell built using the apecs library.
+  description:
+    - Game in Haskell built using the apecs library.
