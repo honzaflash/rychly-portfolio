@@ -18,8 +18,10 @@ const tabs: { label: string, path: string }[] = [
 ]
 
 export const Navigation = () => {
-  const { pathname } = useLocation()
   const navigate = useNavigate()
+
+  const { pathname } = useLocation()
+  const currentTabIndex = tabs.findIndex((tab) => pathname.includes(tab.path))
 
   const scrollIsAtTop = !useScrollTrigger({ threshold: 20, disableHysteresis: true })
 
@@ -47,7 +49,7 @@ export const Navigation = () => {
             Rychly
           </Typography>
           <Tabs
-            value={tabs.findIndex((tab) => pathname.includes(tab.path))}
+            value={currentTabIndex === -1 ? false : currentTabIndex}
             TabIndicatorProps={{ sx: { display: 'none' } }}
           >
             {tabs.map((tab, index) => (

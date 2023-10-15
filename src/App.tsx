@@ -14,7 +14,7 @@ const router = createHashRouter([
     children: [
       {
         path: '/landing',
-        element: <Navigate to="/landing/all" />
+        element: <Navigate to="/landing/all" replace />
       },
       {
         path: '/landing/:filter',
