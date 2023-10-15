@@ -21,7 +21,7 @@ const router = createHashRouter([
         element: <LandingPage />,
       },
       {
-        path: '/things',
+        path: '/things/:projectId?',
         element: <Things />,
       },
     ],

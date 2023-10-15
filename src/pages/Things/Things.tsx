@@ -1,15 +1,39 @@
 import { Box, Typography } from '@mui/material'
 import rawProjects from '../../configs/projects.json'
 import { unKeyBy } from '../../utils'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Project } from './Project'
 import { Section } from '../../components/Section'
+import { useParams } from 'react-router-dom'
 
+
+const SCROLL_OFFSET = 80
 
 export const getProjects = () => unKeyBy(rawProjects, 'name')
 
 export const Things = () => {
   const projects = useMemo(getProjects, [])
+
+  const { projectId } = useParams()
+  const [extend, setExtend] = useState(0)
+  // On mount, scroll down to the project referenced in the URL (if any)
+  useEffect(() => {
+    if (!projectId) return
+    
+    const projectY = window.document.getElementById(projectId)?.offsetTop ?? 0
+
+    // if needed extend the page heigth so that we can scroll all the way to the project
+    const pageBottom = window.document.getElementsByTagName('body')[0]?.offsetHeight ?? 0
+    if (pageBottom < projectY - SCROLL_OFFSET + window.innerHeight) {
+      setExtend(projectY - SCROLL_OFFSET + window.innerHeight - pageBottom)
+    }
+    
+    window.scrollTo({ top: 0 }) // jump to the top in case the page did not load that way
+    setTimeout(
+      () => window.scrollTo({ top: projectY - SCROLL_OFFSET, behavior: 'smooth' }),
+      300,
+    )
+  }, [projectId])
   
   return (
     <Box>
@@ -33,5 +57,6 @@ export const Things = () => {
       <Section>
         {projects.map((project, i) => <Project details={project} key={i} />)}
       </Section>
+      <Box sx={{ height: extend, widht: '1px' }} />
     </Box>
   )}

@@ -104,6 +104,9 @@ const theme = createTheme({
     },
     MuiCssBaseline: {
       styleOverrides: {
+        html: {
+          scrollPaddingTop: '60px',
+        },
         a: {
           transition: 'color 200ms',
           '&:any-link': {

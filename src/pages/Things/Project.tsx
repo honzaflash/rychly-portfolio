@@ -22,9 +22,13 @@ type ProjectProps = {
   summary?: boolean
 } & CardProps
 
+export const getProjectId = (name: string) => name.toLowerCase().replace(/\s+/g, '-')
+
 export const Project = ({ details, summary, ...props }: ProjectProps) => (
   <Card {...props}>
-    <Typography variant="h5">{details.name}</Typography>
+    <Typography variant="h5" id={getProjectId(details.name)} sx={{ scrollMarginTop: '20px' }}>
+      {details.name}
+    </Typography>
     <Typography variant="overline">
       {[
         details.date.start,
