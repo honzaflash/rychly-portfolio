@@ -1,4 +1,4 @@
-import { Card, CardProps, Typography } from '@mui/material'
+import { Box, Card, CardProps, Chip, Typography } from '@mui/material'
 import { ListFromMd } from '../../components/ListFromMd'
 import _ from 'lodash'
 import { SpanFromMd } from '../../components/SpanFromMd'
@@ -37,7 +37,12 @@ export const Project = ({ details, summary, ...props }: ProjectProps) => (
     </Typography>
     {summary
       ? <Typography><SpanFromMd markdown={details.summary} /></Typography>
-      : <ListFromMd items={details.description} />
+      : (<>
+        <ListFromMd items={details.description} />
+        <Box sx={{ mt: 3, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          {details.tech.map((item, i) => <Chip label={item} variant="outlined" key={i} />)}
+        </Box>
+      </>)
     }
   </Card>
 )
