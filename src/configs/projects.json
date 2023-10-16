@@ -26,6 +26,8 @@
     ]
   },
   "Rychly Portfolio": {
+    "repo": "https://github.com/honzaflash/rychly-portfolio",
+    "link": "https://honzaflash.github.io/rychly-portfolio/",
     "tech": [
       "TypeScript",
       "React",
@@ -39,12 +41,15 @@
     "summary": "Responsive React app that shows off who I am as a professional and a bit more.",
     "description": [
       "The 'Fast' Portfolio ([What does Rychly mean?](https://translate.google.com/details?sl=cs&tl=en&text=rychl%C3%BD&op=translate))",
+      "Content is loaded from YAML files into the template components, allowing easy editting without a large tird-party content management tool",
       "Responsive design",
-      "Content is loaded from YAML files into the template components",
-      "Main page filters content based on the selected type of developer"
+      "Main page filters content based on the selected type of developer",
+      "Simple bold design with accents in my favorite color"
     ]
   },
   "Game Development in Haskell": {
+    "repo": "https://github.com/honzaflash/ba-thesis",
+    "link": "https://is.muni.cz/th/zedur/?lang=en",
     "relevancy": [
       "fe",
       "be"
@@ -63,11 +68,11 @@
       "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.",
       "Finished in a single semester, receiving an A",
       "Researched game engine design and IO libraries",
-      "Wrote two versions of Asteroids in Haskell and compared them against each other and against a C++ implementation",
-      "You can check it out [here](https://is.muni.cz/th/zedur/?lang=en)"
+      "Wrote two versions of Asteroids in Haskell and compared them against each other and against a C++ implementation"
     ]
   },
   "pure-asteroids": {
+    "repo": "https://github.com/honzaflash/ba-thesis/tree/main/pure-asteroids",
     "date": {
       "finish": "Apr 2021"
     },
@@ -82,6 +87,7 @@
     ]
   },
   "hAsteroids": {
+    "repo": "https://github.com/honzaflash/ba-thesis/tree/main/hAsteroids",
     "date": {
       "finish": "Apr 2021"
     },
