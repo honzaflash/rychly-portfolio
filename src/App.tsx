@@ -3,8 +3,9 @@ import { Navigate, RouterProvider, createHashRouter } from 'react-router-dom'
 
 import theme from './theme'
 import { LandingPage } from './pages/LandingPage'
+import { Things } from './pages/Things'
 import { Layout } from './layouts/Layout'
-import { Things } from './pages/Things/Things'
+import { People } from './pages/People'
 
 
 const router = createHashRouter([
@@ -23,6 +24,10 @@ const router = createHashRouter([
       {
         path: '/things/:projectId?',
         element: <Things />,
+      },
+      {
+        path: '/people',
+        element: <People />,
       },
     ],
   },

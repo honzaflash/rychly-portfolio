@@ -12,9 +12,11 @@ const a11yProps = (index: number) => ({
  
 })
 
+// TODO consolidate this config object with the router object and make creating links safer through constants or type checking
 const tabs: { label: string, path: string }[] = [
   { label: 'Main', path: '/landing' },
   { label: 'Things', path: '/things' },
+  { label: 'People', path: '/people' },
 ]
 
 export const Navigation = () => {
