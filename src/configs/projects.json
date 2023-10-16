@@ -8,26 +8,29 @@
       "start": 2021
     },
     "tech": [
-      "Raspberry Pi 4",
-      "General Purpose I/O",
-      "I2C",
-      "Python",
-      "Bash",
-      "UNIX services",
       "Node.js",
-      "TypeScript"
+      "Express.js",
+      "TypeScript",
+      "React",
+      "Raspberry Pi 4",
+      "I2C",
+      "Bash",
+      "UNIX services"
     ],
     "summary": "React app with back end running on a Raspberry Pi. Shows useful information in one place including: room temperature and humidity, task list from Notion, and time.",
     "description": [
-      "React app hosted on a single-board computer (RPi) along with a RESTful API written with Express.js",
-      "Wrote a proxy service for Notion (the app then displays a task list)",
+      "React app hosted on a single-board computer (RPi) along with a RESTful API",
+      "Inlcudes a proxy endpoint for Notion (the app then displays a task list)",
       "Connected an indoor temperature and humidity sensor",
       "Wired up a relay board to control appliances through software"
     ]
   },
   "Rychly Portfolio": {
     "tech": [
-      "React"
+      "TypeScript",
+      "React",
+      "Material UI",
+      "React Router"
     ],
     "date": {
       "start": 2023,
@@ -36,8 +39,8 @@
     "summary": "Responsive React app that shows off who I am as a professional and a bit more.",
     "description": [
       "The 'Fast' Portfolio ([What does Rychly mean?](https://translate.google.com/details?sl=cs&tl=en&text=rychl%C3%BD&op=translate))",
-      "Responsive design, uses Material UI and React Router",
-      "Content can be easily updated through YAML configuration files",
+      "Responsive design",
+      "Content is loaded from YAML files into the template components",
       "Main page filters content based on the selected type of developer"
     ]
   },
@@ -51,11 +54,17 @@
     },
     "tech": [
       "Haskell",
-      "apecs (Entity Component System)"
+      "Game Engine Architecture",
+      "apecs (Entity Component System)",
+      "SDL2"
     ],
-    "summary": "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.",
+    "summary": "Bachelor's thesis exploring the pros and cons of using functional programming for game development.",
     "description": [
-      "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games."
+      "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.",
+      "Finished in a single semester, receiving an A",
+      "Researched game engine design and IO libraries",
+      "Wrote two versions of Asteroids in Haskell and compared them against each other and against a C++ implementation",
+      "You can check it out [here](https://is.muni.cz/th/zedur/?lang=en)"
     ]
   },
   "pure-asteroids": {
@@ -66,9 +75,10 @@
       "Haskell",
       "SDL2"
     ],
-    "summary": "An atempt at a purely functional game engine focusing on type safety and clarity.",
+    "summary": "An attempt at a purely functional game engine focusing on type safety and clarity.",
     "description": [
-      "An atempt at a purely functional game engine focusing on type safety and clarity."
+      "An attempt at a purely functional game engine focusing on type safety and clarity",
+      "Keeps game entites compartmentalized allowing for **parallel processing** of world events"
     ]
   },
   "hAsteroids": {
@@ -77,11 +87,12 @@
     },
     "tech": [
       "Haskell",
+      "apecs",
       "SDL2"
     ],
     "summary": "Game in Haskell built using the apecs library.",
     "description": [
-      "Game in Haskell built using the apecs library."
+      "Game in Haskell built using the apecs library"
     ]
   }
 }
