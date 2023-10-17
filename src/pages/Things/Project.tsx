@@ -3,6 +3,7 @@ import { ListFromMd } from '../../components/ListFromMd'
 import _ from 'lodash'
 import { SpanFromMd } from '../../components/SpanFromMd'
 import { GithubIcon } from '../../icons/GithubIcon'
+import { ExternalLink } from '../../components/ExternalLink'
 
 
 // TODO flag for projects that are displayed on the landing page vs only on the things page 
@@ -30,7 +31,7 @@ export const getProjectId = (name: string) => name.toLowerCase().replace(/\s+/g,
 export const Project = ({ details, summary, ...props }: ProjectProps) => (
   <Card {...props}>
     <Typography variant="h5" id={getProjectId(details.name)} sx={{ scrollMarginTop: '20px' }}>
-      {details.name}
+      {summary || !details.link ? details.name : <ExternalLink href={details.link}>{details.name}</ExternalLink>}
     </Typography>
     <Typography variant="overline">
       {[
