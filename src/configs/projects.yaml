@@ -32,7 +32,7 @@ Rychly Portfolio:
   summary: Responsive React app that shows off who I am as a professional and a bit more.
   description:
     - The 'Fast' Portfolio ([What does Rychly mean?](https://translate.google.com/details?sl=cs&tl=en&text=rychl%C3%BD&op=translate))
-    - Content is loaded from YAML files into the template components, allowing easy editting without a large tird-party content management tool
+    - Content is loaded from YAML files into the template components, allowing easy editing without a large third-party content management tool
     - Responsive design
     - Main page filters content based on the selected type of developer
     - Simple bold design with accents in my favorite color
@@ -78,3 +78,20 @@ hAsteroids:
   summary: Game in Haskell built using the apecs library.
   description:
     - Game in Haskell built using the apecs library
+
+3D printing:
+  link: https://www.printables.com/@hFlash_383528/models
+  date:
+    start: Nov 2022
+    ongoing: true
+  tech:
+    - CAD (Fusion 360)
+    - Prusa Slic3r
+    - Prusa i3 MK3S+
+  summary: Venturing into a new world of making. Taught myself CAD, assembled a 3D printer, and started printing custom designs to fix big and small problems in daily life.
+  description:
+    - Taught myself CAD, assembled my Prusa i3 kit, and started printing solutions to problems
+    - Backup camera mount and modular phone holder for a Toyota FJ Cruiser
+    - Stackable soda can storage/dispenser
+    - Laptop stand with an overhang design and a shallow drawer
+    - Contributed to the open source [Gridfinity storage system](https://gridfinity.xyz/) by designing few organizers
