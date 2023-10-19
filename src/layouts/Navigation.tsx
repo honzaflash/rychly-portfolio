@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 // The title is supposed to imitate a code source file header
-import { AppBar, Box, Card, Container, Tab, Tabs, Toolbar, Typography, useScrollTrigger } from '@mui/material'
+import { AppBar, Box, Card, Container, Tab, Tabs, Toolbar, Typography, buttonBaseClasses, tabsClasses, useScrollTrigger } from '@mui/material'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { Contacts } from '../components/Contacts'
 
@@ -49,9 +49,18 @@ export const Navigation = () => {
           >
             Rychly
           </Typography>
+          {/* TODO rethink navigation on mobile -> hamburger menu and only active tabs shown */}
           <Tabs
             value={currentTabIndex === -1 ? false : currentTabIndex}
             TabIndicatorProps={{ sx: { display: 'none' } }}
+            variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
+            sx={{
+              [`& .${tabsClasses.scrollButtons}.${buttonBaseClasses.disabled}`]: {
+                opacity: '0.3',
+              },
+            }}
           >
             {tabs.map((tab, index) => (
               <Tab
@@ -69,10 +78,13 @@ export const Navigation = () => {
             ))}
           </Tabs>
           <Box sx={{ flexGrow: 1 }} />
-          <Card sx={{ p: 2, display: 'flex', gap: 3 }}>
+          <Card sx={{ display: { xs: 'none', sm: 'flex' }, p: 2, gap: 3 }}>
             <Typography>Contact</Typography>
             <Contacts />
           </Card>
+          <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+            <Contacts />
+          </Box>
           <Box component="span" sx={({ palette }) => ({
             position: 'absolute',
             // width: '100%',
