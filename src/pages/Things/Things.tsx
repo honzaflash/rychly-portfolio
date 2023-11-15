@@ -58,7 +58,7 @@ export const Things = () => {
         <Typography>Here are some of my favorites that I have made, including software and hardware.</Typography>
       </Grid>
       <Grid item xs={12} md={6}>
-        <CoolArtTarget />
+        <CoolArtTarget sx={{ minHeight: '400px' }} />
       </Grid>
       <Grid item xs={12}>
         <Section>
