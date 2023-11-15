@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles'
 
-const PRIMARY_COLOR = '#48b53f'
+export const PRIMARY_COLOR = '#48b53f'
 
 const DEFAULT_BACKGROUND = '#010302'
 const PAPER_BACKGROUND = '#091209'

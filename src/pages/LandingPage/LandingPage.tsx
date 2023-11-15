@@ -1,11 +1,12 @@
-import { Container, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 import { Skills } from './Skills'
 import { Intro } from './Intro'
 import { FilterSelector } from './FilterSelector'
 import { ExperienceList } from './ExperienceList'
 import { EducationList } from './EducationList'
-import { Todo } from '../../components/Todo'
 import { ProjectList } from './ProjectList'
+import { CoolArtTarget } from '../../components/CoolArt'
+
 
 export const LandingPage = () => (
   <Grid container spacing={2} >
@@ -29,11 +30,9 @@ export const LandingPage = () => (
       </Stack>
     </Grid>
     <Grid item xs={12} md={6}>
-      <Container>
-        <Todo sx={{ opacity: 0 }} name="Cool art" />
-      </Container>
+      <CoolArtTarget sx={{ minHeight: '500px' }} />
     </Grid>
-    <Grid item xs="auto">
+    <Grid item xs={12}>
       <FilterSelector />
     </Grid>
     <Grid item xs={12}>
