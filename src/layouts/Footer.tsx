@@ -7,7 +7,7 @@ export const Footer = () => (
     <Container sx={{ px: { xs: 3, md: 20 } }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Typography>
-          This website was built by me, Jan Rychly. See <a href="/#/things/rychly-portfolio">how it was made</a>.
+          This website was built by me, Jan Rychly. See <a href="#/things/rychly-portfolio">how it was made</a>.
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
           <Typography>
