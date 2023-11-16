@@ -65,10 +65,33 @@
     ],
     "summary": "Bachelor's thesis exploring the pros and cons of using functional programming for game development.",
     "description": [
-      "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games.",
+      "Bachelor's thesis exploring the limits of functional programming when used in realtime applications, specifically games",
       "Finished in a single semester, receiving an A",
       "Researched game engine design and IO libraries",
       "Wrote two versions of Asteroids in Haskell and compared them against each other and against a C++ implementation"
+    ]
+  },
+  "Dynamics of Local Church": {
+    "relevancy": [
+      "be",
+      "fs",
+      "data",
+      "fe"
+    ],
+    "date": {
+      "finish": "May 2020"
+    },
+    "tech": [
+      "Python",
+      "NumPy",
+      "Pandas"
+    ],
+    "summary": "A simulation model implemented in Python with behavior analysis and visualization using NumPy and Pandas.",
+    "description": [
+      "The final project for a Modeling and Simulation course",
+      "Models the complex system of youth ministry in a church",
+      "Ended up being similar to the SIR disease model except the population is open",
+      "Part of the assignment was a 7 page report and analysis of the behavior with visualization"
     ]
   },
   "pure-asteroids": {
