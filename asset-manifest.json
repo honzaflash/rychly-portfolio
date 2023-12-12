@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/rychly-portfolio/static/js/main.a9aaf206.js",
+    "main.js": "/rychly-portfolio/static/js/main.b4178e06.js",
     "index.html": "/rychly-portfolio/index.html",
-    "main.a9aaf206.js.map": "/rychly-portfolio/static/js/main.a9aaf206.js.map"
+    "main.b4178e06.js.map": "/rychly-portfolio/static/js/main.b4178e06.js.map"
   },
   "entrypoints": [
-    "static/js/main.a9aaf206.js"
+    "static/js/main.b4178e06.js"
   ]
 }
