@@ -13,7 +13,7 @@ const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 1000)
 camera.position.z = 10
 
-const renderer = new THREE.WebGLRenderer()
+const renderer = new THREE.WebGLRenderer({ alpha: true })
 renderer.setSize(800, 1000)
 
 const clock = new THREE.Clock()
