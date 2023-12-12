@@ -14,19 +14,30 @@
       "Automata and Grammars",
       {
         "Database Systems": [
-          "be"
+          "be",
+          "fs"
         ]
       },
       "Computer Network Services",
-      "Seminar on Functional Programming",
+      {
+        "Seminar on Functional Programming": [
+          "fe",
+          "chain",
+          "data",
+          "func"
+        ]
+      },
       {
         "Java": [
-          "be"
+          "be",
+          "fs"
         ]
       },
       {
         "C++ programming": [
-          "be"
+          "be",
+          "fs",
+          "game"
         ]
       },
       {
@@ -36,7 +47,8 @@
       },
       {
         "Generative Design Programming": [
-          "fe"
+          "fe",
+          "web"
         ]
       },
       {
@@ -55,7 +67,10 @@
       "Followed up by learning the basics of microservice architecture and Spring Boot"
     ],
     "relevancy": [
-      "be"
+      "be",
+      "fs",
+      "chain",
+      "game"
     ]
   }
 }

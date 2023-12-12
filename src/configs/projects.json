@@ -1,8 +1,12 @@
 {
   "Pie-Hub": {
     "relevancy": [
+      "all",
       "fe",
-      "be"
+      "be",
+      "fs",
+      "data",
+      "maker"
     ],
     "date": {
       "start": 2021
@@ -26,6 +30,13 @@
     ]
   },
   "Rychly Portfolio": {
+    "relevancy": [
+      "all",
+      "fe",
+      "fs",
+      "data",
+      "func"
+    ],
     "repo": "https://github.com/honzaflash/rychly-portfolio",
     "link": "https://honzaflash.github.io/rychly-portfolio/",
     "tech": [
@@ -48,12 +59,9 @@
     ]
   },
   "Game Development in Haskell": {
+    "relevancy": "any",
     "repo": "https://github.com/honzaflash/ba-thesis",
     "link": "https://is.muni.cz/th/zedur/?lang=en",
-    "relevancy": [
-      "fe",
-      "be"
-    ],
     "date": {
       "finish": "May 2021"
     },
@@ -73,10 +81,11 @@
   },
   "Dynamics of Local Church": {
     "relevancy": [
+      "all",
       "be",
       "fs",
       "data",
-      "fe"
+      "func"
     ],
     "date": {
       "finish": "May 2020"
@@ -95,6 +104,14 @@
     ]
   },
   "pure-asteroids": {
+    "relevancy": [
+      "all",
+      "be",
+      "fs",
+      "chain",
+      "data",
+      "func"
+    ],
     "repo": "https://github.com/honzaflash/ba-thesis/tree/main/pure-asteroids",
     "date": {
       "finish": "Apr 2021"
@@ -110,6 +127,13 @@
     ]
   },
   "hAsteroids": {
+    "relevancy": [
+      "all",
+      "be",
+      "fs",
+      "chain",
+      "func"
+    ],
     "repo": "https://github.com/honzaflash/ba-thesis/tree/main/hAsteroids",
     "date": {
       "finish": "Apr 2021"
@@ -125,6 +149,10 @@
     ]
   },
   "3D printing": {
+    "relevancy": [
+      "all",
+      "maker"
+    ],
     "link": "https://www.printables.com/@hFlash_383528/models",
     "date": {
       "start": "Nov 2022",

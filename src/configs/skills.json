@@ -1,101 +1,149 @@
 {
   "hard": {
     "advanced": {
-      "JavaScript": [
-        "fe",
-        "be"
+      "JavaScript": "any",
+      "TypeScript": "any",
+      "Functional React Components": [
+        "func"
       ],
-      "TypeScript": [
-        "fe",
-        "be",
-        "chain"
-      ],
-      "Haskell": [
-        "fe",
-        "be",
-        "chain"
-      ],
+      "Haskell": "any",
       "React": [
-        "fe"
+        "fe",
+        "fs",
+        "all"
       ]
     },
     "intermediate": {
-      "C++": [
-        "be"
+      "C/C++": [
+        "be",
+        "fs",
+        "all"
       ],
       "Python": [
-        "be"
+        "be",
+        "fs",
+        "data",
+        "all"
       ],
       "Graphic Design": [
         "fe",
-        "web"
+        "web",
+        "all"
+      ],
+      "lodash": [
+        "func"
+      ],
+      "Haddock": [
+        "func"
+      ],
+      "Haskell Stack tool": [
+        "func"
       ],
       "Node.js": [
-        "be"
+        "be",
+        "fs",
+        "data",
+        "chain",
+        "all"
       ],
       "HTML": [
-        "fe"
+        "fe",
+        "web",
+        "fs",
+        "all"
       ],
       "CSS": [
-        "fe"
+        "fe",
+        "web",
+        "fs",
+        "all"
       ],
       "Redux Toolkit": [
-        "fe"
+        "fe",
+        "fs",
+        "all"
       ],
       "Material UI": [
-        "fe"
+        "fe",
+        "fs",
+        "all"
       ],
       "Express.js": [
-        "be"
+        "be",
+        "fs",
+        "all"
       ],
       "REST APIs": [
         "fe",
-        "be"
+        "be",
+        "fs",
+        "all"
       ],
       "PostgreSQL": [
-        "be"
-      ],
-      "Git": [
+        "be",
+        "fs",
         "all"
       ],
-      "Jira/Atlassian": [
-        "all"
-      ]
+      "Git": "any",
+      "Jira/Atlassian": "any"
     },
     "familiar": {
       "Jest.js": [
-        "fe"
+        "fe",
+        "fs",
+        "all"
       ],
       "jQuery": [
-        "fe"
+        "fe",
+        "all"
+      ],
+      "NumPy": [
+        "data"
+      ],
+      "Pandas": [
+        "data"
       ],
       "Kotlin": [
         "be",
-        "chain"
+        "fs",
+        "chain",
+        "func",
+        "all"
       ],
       "Java": [
-        "be"
+        "be",
+        "fs",
+        "all"
       ],
       "Rust": [
         "be",
-        "chain"
+        "fs",
+        "chain",
+        "func",
+        "all"
       ],
       "Go": [
         "be",
-        "chain"
+        "fs",
+        "chain",
+        "all"
       ],
       "Kafka": [
-        "be"
+        "be",
+        "fs",
+        "all"
       ],
-      "CI/CD": [
-        "fe",
-        "be"
-      ],
+      "CI/CD": "any",
       "Mircoservices": [
-        "be"
+        "be",
+        "fs",
+        "chain",
+        "all"
       ],
       "Spring Boot": [
-        "be"
+        "be",
+        "fs",
+        "all"
       ]
     }
   },

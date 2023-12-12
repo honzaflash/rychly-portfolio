@@ -11,10 +11,13 @@ const a11yProps = (index: number) => ({
 
 const PAGE_PATH = '/landing'
 
-const filterOpts = [
+export const filterOpts = [
   { label: 'Full Stack', filter: 'full-stack' },
   { label: 'Front End', filter: 'front-end' },
   { label: 'Back End', filter: 'back-end' },
+  { label: 'Block Chain', filter: 'block-chain' },
+  { label: 'Functional', filter: 'func' },
+  { label: 'Data Science', filter: 'data-science' },
 ] as const
 
 export const FilterSelector = () => {

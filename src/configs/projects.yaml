@@ -1,5 +1,5 @@
 Pie-Hub:
-  relevancy: [fe, be]
+  relevancy: [all, fe, be, fs, data, maker]
   date:
     start: 2021
   tech:
@@ -19,6 +19,7 @@ Pie-Hub:
     - Wired up a relay board to control appliances through software
 
 Rychly Portfolio:
+  relevancy: [all, fe, fs, data, func]
   repo: https://github.com/honzaflash/rychly-portfolio
   link: https://honzaflash.github.io/rychly-portfolio/
   tech:
@@ -38,9 +39,9 @@ Rychly Portfolio:
     - Simple bold design with accents in my favorite color
 
 Game Development in Haskell:
+  relevancy: any
   repo: https://github.com/honzaflash/ba-thesis
   link: https://is.muni.cz/th/zedur/?lang=en
-  relevancy: [fe, be]
   date:
     finish: May 2021
   tech:
@@ -56,7 +57,7 @@ Game Development in Haskell:
     - Wrote two versions of Asteroids in Haskell and compared them against each other and against a C++ implementation
 
 Dynamics of Local Church:
-  relevancy: [be, fs, data, fe] # 'fe' is there only temporarily because of a submitted application with a front-end link
+  relevancy: [all, be, fs, data, func] # 'fe' is there only temporarily because of a submitted application with a front-end link
   date:
     finish: May 2020
   tech:
@@ -71,6 +72,7 @@ Dynamics of Local Church:
     - Part of the assignment was a 7 page report and analysis of the behavior with visualization  
 
 pure-asteroids:
+  relevancy: [all, be, fs, chain, data, func]
   repo: https://github.com/honzaflash/ba-thesis/tree/main/pure-asteroids
   date:
     finish: Apr 2021
@@ -83,6 +85,7 @@ pure-asteroids:
     - Keeps game entites compartmentalized allowing for **parallel processing** of world events
 
 hAsteroids:
+  relevancy: [all, be, fs, chain, func]
   repo: https://github.com/honzaflash/ba-thesis/tree/main/hAsteroids
   date:
     finish: Apr 2021
@@ -95,6 +98,7 @@ hAsteroids:
     - Game in Haskell built using the apecs library
 
 3D printing:
+  relevancy: [all, maker]
   link: https://www.printables.com/@hFlash_383528/models
   date:
     start: Nov 2022

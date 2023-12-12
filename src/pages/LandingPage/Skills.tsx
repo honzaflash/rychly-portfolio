@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import _ from 'lodash'
 
 import rawSkills from '../../configs/skills.json'
-import { RelevancyTags, relevancyPredicates } from './relevancyFiltering'
+import { RelevancyTags, filterObjectsByRelevancy } from './relevancyFiltering'
 
 
 const SkillChipsBox = ({ skills, ...props }: ChipProps & { skills: { name: string }[] }) => (
@@ -17,9 +17,11 @@ const SkillChipsBox = ({ skills, ...props }: ChipProps & { skills: { name: strin
 export const Skills = () => {
   const { filter } = useParams()
   const skills = _.mapValues(rawSkills.hard, (ratedSkills, level) =>
-    _.map(
-      _.pickBy(ratedSkills, relevancyPredicates[filter ?? '']),
-      (relevancy: RelevancyTags, name) => ({name, level, relevancy})),
+    filterObjectsByRelevancy(
+      _.map(ratedSkills, (relevancy: RelevancyTags, name) => ({name, level, relevancy})),
+      'relevancy',
+      filter,
+    ),
   )
 
   return (

@@ -11,13 +11,13 @@ Masaryk University:
     - Algorithms and Data Structures I
     - Computability and Complexity
     - Automata and Grammars
-    - Database Systems: [be]
+    - Database Systems: [be, fs]
     - Computer Network Services
-    - Seminar on Functional Programming
-    - Java: [be]
-    - C++ programming: [be]
+    - Seminar on Functional Programming: [fe, chain, data, func]
+    - Java: [be, fs]
+    - C++ programming: [be, fs, game]
     - Principles of Low-Level Programming: [be]
-    - Generative Design Programming: [fe]
+    - Generative Design Programming: [fe, web]
     - Game Design I: [game]
 
 Hyperskill.org/JetBrains Academy:
@@ -27,4 +27,4 @@ Hyperskill.org/JetBrains Academy:
     - Gained solid understanding of Kotlin through quizzes, a practice project, and reading through the language documentation 
     - Refreshed knowledge of Object Oriented principles
     - Followed up by learning the basics of microservice architecture and Spring Boot 
-  relevancy: [be]
+  relevancy: [be, fs, chain, game]
