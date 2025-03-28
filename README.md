@@ -4,7 +4,10 @@ A place to show what I am about professionally.
 
 # Used Tech
 ### React
-I chose to use React just to show case what I already know and have experience with. That should also speed up the process for me as I want an up-to-date protfolio quickly since I am currently searching for a job.
+I chose to use React just to show case what I already know and
+have experience with. It also sped up the process for me
+as I wanted an up-to-date protfolio quickly since at the time
+I was actively searching for a job.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -48,3 +51,4 @@ Standard create-react-app eject.
 
 # TODOs
 - Create a version of the porfolio using Gatsby
+
