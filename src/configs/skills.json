@@ -11,18 +11,18 @@
         "fe",
         "fs",
         "all"
+      ],
+      "Python": [
+        "be",
+        "fs",
+        "data",
+        "all"
       ]
     },
     "intermediate": {
       "C/C++": [
         "be",
         "fs",
-        "all"
-      ],
-      "Python": [
-        "be",
-        "fs",
-        "data",
         "all"
       ],
       "Graphic Design": [
@@ -71,6 +71,12 @@
       "Express.js": [
         "be",
         "fs",
+        "all"
+      ],
+      "Kafka": [
+        "be",
+        "fs",
+        "data",
         "all"
       ],
       "REST APIs": [
@@ -128,15 +134,17 @@
         "chain",
         "all"
       ],
-      "Kafka": [
+      "Ansible": [
         "be",
         "fs",
+        "data",
         "all"
       ],
       "CI/CD": "any",
       "Mircoservices": [
         "be",
         "fs",
+        "data",
         "chain",
         "all"
       ],
