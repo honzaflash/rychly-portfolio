@@ -4,6 +4,7 @@
       "JavaScript": "any",
       "TypeScript": "any",
       "Functional React Components": [
+        "fe",
         "func"
       ],
       "Haskell": "any",
@@ -79,6 +80,11 @@
         "data",
         "all"
       ],
+      "Celery (Distributed Task Orchestration)": [
+        "be",
+        "fs",
+        "data"
+      ],
       "REST APIs": [
         "fe",
         "be",
@@ -88,10 +94,31 @@
       "PostgreSQL": [
         "be",
         "fs",
+        "data",
+        "all"
+      ],
+      "Redis": [
+        "be",
+        "fs",
+        "data",
+        "all"
+      ],
+      "Ansible": [
+        "be",
+        "fs",
+        "data",
+        "all"
+      ],
+      "Docker": [
+        "be",
+        "fs",
+        "data",
         "all"
       ],
       "Git": "any",
-      "Jira/Atlassian": "any"
+      "Jira/Atlassian": "any",
+      "Neovim": "any",
+      "GitHub Copilot": "any"
     },
     "familiar": {
       "Jest.js": [
@@ -132,12 +159,6 @@
         "be",
         "fs",
         "chain",
-        "all"
-      ],
-      "Ansible": [
-        "be",
-        "fs",
-        "data",
         "all"
       ],
       "CI/CD": "any",
